@@ -27,7 +27,7 @@ sys.path.insert(0, os.path.join(BASE_DIR, "apps"))
 SECRET_KEY = 'd8b%_mva83f-u55@vz8euas$nhdg9cx8w&@03u$^$04(@^^w*&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 ALLOWED_HOSTS = ["*"]
 ADMIN_LOGIN = "admin"
 
@@ -103,8 +103,8 @@ DATABASES = {
         'NAME': "devops",
         'USER': 'root',
         'PASSWORD': "123456",
-        'HOST': "127.0.0.1",
-        'PORT': "3307",
+        'HOST': "192.168.10.10",
+        'PORT': "3306",
         'OPTIONS': {
             'init_command': "SET storage_engine=INNODB;SET sql_mode='STRICT_TRANS_TABLES'"
         }
@@ -276,3 +276,4 @@ LOGGING = {
     }
 }
 
+LOGGING = {}
